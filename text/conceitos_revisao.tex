@@ -1,94 +1,72 @@
-\chapter{Conceitos gerais e revisão da literatura}
+\chapter{Trabalhos correlacionados}
 \label{chp:conceitos-gerais}
 Conforme explorado no capítulo \ref{chp:introducao}, um ambiente de desenvolvimento na Web é essencial para o engajamento de estudantes na área de desenvolvimento de sistemas. Com isso, nossa ferramenta Web de desenvolvimento pretende disponibilizar algoritmos e um ambiente de desenvolvimento on-line, com a possibilidade de salvar os algoritmos na nuvem e permitirá validar eles. Os usuários também poderão analisar onde estão acertando e errando para que possam se auto-avaliar.
 
-A disponibilização de ambientes de desenvolvimento na Web não é novidade. Entretanto, cada ferramenta tem sua especialidade e foco em uma área de desenvolvimento. Neste capítulo serão apresentados sistemas que seguem essa temática e que inspiram essa ferramenta.
+A disponibilização de ambientes de desenvolvimento na Web não é novidade. Entretanto, cada ferramenta tem sua especialidade e foco em uma área de desenvolvimento. Neste capítulo serão apresentados sistemas que seguem essa ideia. Após, haverá uma tabela apontando as diferenças entre cada plataforma.
 
 \section{CodePen}
 \label{sec:codepen}
-O CodePen é um ambiente de desenvolvimento colaborativo com foco no desenvolvimento de Front-end e de código aberto. O CodePen foi desenvolvido como uma comunidade de compartilhamento de demonstrações e exemplos. Ele permite que os usuários desenvolvam sites através do navegador. Ele é ideal para expor trabalhos interativos e funcionais \cite{fiala2016collaborative}.
+O CodePen é um ambiente de desenvolvimento colaborativo com foco no desenvolvimento de Front-end e de código aberto. O CodePen foi desenvolvido como uma comunidade de compartilhamento de demonstrações e exemplos. Ele permite que os usuários desenvolvam sites através do navegador. 
+
+Ele é ideal para expor trabalhos interativos e funcionais \cite{fiala2016collaborative}. As principais vantagens do CodePen se dão em seu ambiente de desenvolvimento dinâmico em que as alterações aparecem na página logo após editar um arquivo HTML.
+
+Como os dados estão salvos em nuvem, a disponibilização de código fica mais rápida e simples, permitindo que desenvolvedores possam expor portfólios editáveis, ao mesmo tempo que o deixam disponíveis para que outras pessoas possam utilizar essa página como inspiração.
 
 \section{JSFiddle}
 \label{sec:jsfiddle}
-O JSFiddle também é um ambiente de desenvolvimento colaborativo. Tal qual o CodePen \ref{sec:codepen}, permite manter códigos armazenados e compartilhá-los com outros desenvolvedores. Entre os diferenciais do JSFiddle, está o Intellisense, que apresenta uma lista de possibilidades de códigos para serem escritos.
+O JSFiddle também é um ambiente de desenvolvimento colaborativo. Tal qual o CodePen \ref{sec:codepen}, permite manter códigos armazenados e compartilhá-los com outros desenvolvedores. Entre os diferenciais do JSFiddle, está o IntelliSense, que apresenta uma lista de possibilidades de códigos para serem escritos.
+
+O JSFiddle é diferente pois ele também permite a disponibilização de códigos, entretanto não tem um foco em criar uma comunidade de desenvolvedores. Uma das diferenças do JSFiddle é a possibilidade de utilizar $boilerplates$, códigos já prontos com o mínimo de configuração inicial para que seja executado com sucesso.
+
+Essa ferramenta possui a tecnologia do IntelliSense, uma espécie de "autocomplete" que surgere possíveis códigos para que o desenvolvedor complete seu código rapidamente e até mesmo lembre de como uma função ou objeto funciona.
 
 \section{Coding Ground}
 \label{sec:codingground}
 O Coding Ground é uma plataforma de desenvolvimento para sites de tutoriais. Ele disponibiliza um pequeno ambiente para que o usuário possa editar códigos e executá-los. Também possui uma vasta biblioteca de linguagens possíveis para utilização, inclusive com frameworks e bibliotecas de Front-End.
 
+O Coding Ground se distancia um pouco das plataformas que serão discutidas nessa seção, pois é uma plataforma para criação de tutoriais, mas que permite a utilização de um ambiente de desenvolvimento que funciona com precisão e velocidade.
+
+Essa ferramenta não é capaz de executar testes unitários e nem possui nenhuma forma de desafios ou algoritmos para serem resolvidos.
+
 \section{Fabriki}
 \label{sec:fabriki}
 Uma plataforma educacional com foco em ensinar linguagem de programação. Criada para guiar o estudante do iniciante ao avançado. Possui suporte para desenvolvimento Web e algoritmos em Java. A plataforma também possibilita a validação dos algoritmos quando submetidos.
+
+O grande diferencial do Fabrik a outras plataformas é que os algoritmos não ficam presos a apenas métodos ou classes, ele é capaz de executar testes unitários nos códigos enviados que permitem exercícios complexos como algoritmos de Orientação a Objetos complexos e desenvolvimento de Back-End utilizando a linguagem Java.
+
+Além disso, os algoritmos disponíveis ficam separados por turmas e disponibilizados aos alunos aos poucos. Os algoritmos disponíveis são explicativos e podem possuir até mesmo vídeos e dicas de como resolver os algoritmos.
 
 \section{The Huxley}
 \label{sec:thehuxley}
 Uma plataforma competitiva, que possibilita o desenvolvimento direto pelo Browser, com validação de códigos e algoritmos desafiadores. Esta plataforma possui suporte para  até 7 linguagens de programação que o usuário pode escolher ao começar. Está disponível gratuitamente.
 
+É uma ótima ferramenta para sala de aula, pois permite criar salas e disponibilizar algoritmos para serem resolvidos, rapidamente e com testes locais e submissão a testes. 
+
+Também possui uma tela com estatísticas do algoritmo, onde o pessoal mais acerta, erra, se há erro de compilação, entre outros problemas.
+
+Apesar de bem completo, seu ambiente é um pouco confuso e que pode afastar usuários que não se apeguem à plataforma.
+
+
+
 
 \begin{table}[htb]
-	\caption{Tabela comparativa entre as Ferramentas/sistemas similares}
-	\label{tb:sistemas-similares}
+	\caption{Tabela comparativa entre os trabalhos correlacionados}
+	\footnotesize
+	\label{tb:trabalhos-correlacionados}
 	\centering
-	\begin{tabular}{|l|l|l|} %left, center, right. Você pode mudar isso
+	\begin{tabular}{|l|c|c|c|c|} %left, center, right. Você pode mudar isso
 		\hline
-        Sistema/Ferramenta & Vantagens & Desvantagens \\
-		\hline		%Vantagens						%Desvantagens
-		 			& Ambiente de fácil utilização. & Não possui Intellisense \\ 
-					& Comunidade forte. & Limitado a apenas HTML, CSS e JavaScript \\
-		CodePen		& Código e Preview na mesma página & Não possui boilerplates \\
-					& Atualização da página em tempo real & \\
-					& Personalização do Layout do Editor Online & \\
+        Sistema/Ferramenta & Salva na nuvem & Validação de Código & Colaboração ao Vivo & Compartilhamento \\
 		\hline
-		JSFiddle 	& Ambiente simples e direto & Não possui navegação \\
-				    & Código e Preview na mesma página &  para visualizar códigos existentes \\
-				    &                          & Limitado a apenas HTML, CSS e JavaScript \\
-				    & Boilerplates para início mais rápido & \\
-				    & Edição compartilhada e em tempo real & \\
+		CodePen & Sim & Não & Não & Sim \\
 		\hline
-		Coding Ground		&           &              \\
+		JSFiddle & Sim & Não & Sim & Sim \\
 		\hline
-		Fabriki 			&           &              \\
+		Coding Ground & Sim & Não & Não & Sim \\
 		\hline
-		The Huxley 			&           &              \\
+		Fabriki & Não & Sim & Não & Não \\
+		\hline
+		The Huxley & Não & Sim & Não & Não \\
 		\hline
 	\end{tabular}
 \end{table}
-
-
-%Neste capítulo deve ser proporcionado o estado da arte / referencial teórico
-%sobre o tema a que se refere o estudo. Um bom pesquisador não deve repetir
-%trabalhos já concluídos ou que já estão em andamento. Por isso esta sessão é
-%onde o autor demonstra até onde vai a pesquisa atual no campo de estudos em
-%questão e estabelece as bases sobre as quais desenvolverá o estudo proposto. A
-%seguir são mostrados alguns exemplos de como deve-se inserir as figuras e
-%tabelas. A Figura \ref{fig:exemplo} mostra um exemplo de como inserir uma
-%figura no texto. A Tabela \ref{tb:exemplo} mostra o exemplo de como uma tabela
-%deve ser inserida.  Voce pode referenciar capítulos e seções adicionando labels
-%à elas. Por exemplo, descrevemos a introdução no Capítulo
-%\ref{chp:introducao}.
-
-\begin{figure}[htb]
-    \centering
-    %\includegraphics[width=0.45\textwidth]{images/figura.png}
-    \caption{Exemplo de como inserir Figura}
-    \label{fig:exemplo}
-\end{figure}
-%Altere o numero junto ao 'width' para acertar o tamanho da figura. Coloque
-%numeros maior que 0 e até 1
-
-\begin{table}[htb]
-\caption{Modelo de como as tabelas devem ser inseridas no texto}
-\label{tb:exemplo}
-\centering
-\begin{tabular}{|l|c|r|r|} %left, center, right. Você pode mudar isso
-\hline
-Índice  & Coluna 1 & Coluna 2 & Coluna 3 \\
-\hline
-Linha 1 &          &          &          \\
-Linha 2 &          &          &          \\
-Linha 3 &          &          &          \\
-\hline
-\end{tabular}
-\end{table}
-%Para manter a sanidade, recomenda-se deixar sempre os '&' alinhados em todas
-%as linhas e colunas
